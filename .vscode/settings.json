@@ -2,5 +2,20 @@
     "python.condaPath": "D:\\Instala\\Anaconda",
     "editor.rulers": [
         79
+    ],
+    "python.envFile": "D:\\Instala\\Anaconda\\envs\\django-course",
+    "python.pythonPath": "D:\\Instala\\Anaconda\\envs\\django-course\\python.exe",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "eslint.nodePath": "",
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "python"
     ]
 }
