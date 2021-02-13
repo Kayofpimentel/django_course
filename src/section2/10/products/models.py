@@ -19,7 +19,7 @@ class Product(models.Model):
     description = models.TextField(blank=True, null=True, max_length=600)
     photo = models.ImageField(blank=True, null=True)
     price = models.FloatField()
-    shippingCost = models.FloatField()
+    shipping_cost = models.FloatField()
     quantity = models.PositiveSmallIntegerField()
 
     def __str__(self):
