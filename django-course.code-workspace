@@ -4,5 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.envFile": "D:\\Instala\\Anaconda\\envs\\django-course",
+		"eslint.nodeEnv": "",
+	}
 }
