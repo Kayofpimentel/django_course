@@ -14,7 +14,7 @@ class ArticleSerializer(srs.Serializer):
     created_at = srs.DateTimeField(read_only=True)
     updated_at = srs.DateTimeField(read_only=True)
 
-    def create(self, validated_data):
+    def create(_, validated_data):
         print(f'{validated_data:}')
         return Article.objects.create(**validated_data)
 
@@ -29,3 +29,6 @@ class ArticleSerializer(srs.Serializer):
             'publication_date', instance.publication_date)
         instance.published = validated_data.get(
             'published', instance.published)
+        instance.save()
+        print(f'{validated_data:}')
+        return instance
