@@ -15,7 +15,7 @@ class ArticleSerializer(srs.ModelSerializer):
         model = Article
         # fields = "__all__"  # Define that we want all the fields of our model
         # fields = ("title","description","body") Example to define some fields
-        exclude = "id", "created_at", "updated_at"
+        exclude = ("id", "created_at", "updated_at",)
 
     def get_time_since_publication(_, object):
         publication_data = object.publication_date

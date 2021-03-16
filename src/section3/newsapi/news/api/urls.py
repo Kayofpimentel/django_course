@@ -1,4 +1,3 @@
-from django.conf.urls import url
 from django.urls import path
 from news.api.views import (
     ArticleDetailApiView, ArticleListCreateApiView, JournalistViewCreateApiView)
