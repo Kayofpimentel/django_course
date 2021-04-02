@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{message}}</h1>
+        <h2>{{value}}</h2>
+        <h2>{{value * 5}}</h2>
+        <h3>{{ "Hello" + " Vue!"}}</h3>
+        <h3>{{ 33/11 * value}}</h3>
+        <h3>{{Math.random()}}</h3>
+        <h3>{{message.split('').reverse().join('')}}</h3>
+        <br>
+        <a v-bind:href="link">Oficial Link</a>
+        <br>
+        <img v-bind:src="imgSrc" alt="">
+
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
