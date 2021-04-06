@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./01.css">
+    <title>Condition</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div v-if='auth'>
+            <h1>Your User Profile</h1>
+            <br>
+            <button @click='logOut'>Log Out</button>
+            <br><br>
+            <h2>Product: {{product}}</h2>
+            <h3 v-if='quantity >= 20'>Available</h3>
+            <h3 v-else-if='quantity > 0 && quantity < 20'>Limited availability</h3>
+            <h3 v-else>Sold Out</h3>
+            <h3 v-show='sale'>On sale!</h3>
+        </div>
+        <div v-else='auth'>
+            <h1>Login to acess your profile</h1>
+            <br>
+            <button @click='logIn'>Log In</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.global.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
