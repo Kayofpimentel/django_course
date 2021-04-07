@@ -1,0 +1,12 @@
+.login-form-container,
+.registration-form-container {
+    margin: auto;
+}
+
+.login-form-container {
+    width: 300px;
+}
+
+.registration-form-container {
+    width: 500px;
+}

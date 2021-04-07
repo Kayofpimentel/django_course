@@ -1,5 +1,4 @@
 import json
-import re
 
 from django.contrib.auth.models import User
 from django.http import response
