@@ -6,5 +6,15 @@
 	],
 	"settings": {
 		"python.envFile": "D:\\Instala\\Anaconda\\envs\\django-course",
+		"eslint.codeAction.showDocumentation": {
+			"enable": true
+		},
+		"eslint.packageManager": "pnpm",
+		"vetur.format.defaultFormatterOptions": {
+
+			"js-beautify-html": {
+				"wrap_attributes": "force-expand-multiline"
+			},
+		},
 	}
 }

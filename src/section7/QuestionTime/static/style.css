@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html,
+body {
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+.auth-box {
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    padding-top: 25px;
+    width: 600px;
+    margin: auto;
+}
+
 .login-form-container,
 .registration-form-container {
     margin: auto;
@@ -9,4 +25,12 @@
 
 .registration-form-container {
     width: 500px;
+}
+
+.outer-area {
+    padding-top: 2rem;
+}
+
+.form-control {
+    height: calc(2em + 2px);
 }

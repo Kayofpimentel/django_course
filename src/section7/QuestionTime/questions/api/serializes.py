@@ -5,7 +5,7 @@ from questions.models import Answer, Question
 class AnswerSerializer(serializers.ModelSerializer):
     author = serializers.StringRelatedField()
     created_at = serializers.SerializerMethodField()
-    linkes_count = serializers.SerializerMethodField()
+    likes_count = serializers.SerializerMethodField()
     user_has_voted = serializers.SerializerMethodField()
 
     class Meta:
